@@ -44,6 +44,33 @@ wget -x -c --load-cookies cookies.txt https://www.kaggle.com/eswarchandt/amazon-
 <img src = "https://user-images.githubusercontent.com/34812655/115943592-af062600-a465-11eb-8553-d554f631bea7.png" width="800" height="400">
 
 
+## DATA PREPROCESSING
+```
+# replacing numerical values with categorical values to reduce the classes to sentiments
+
+data['sentiment'] = data.overall.replace({
+    1:'negative',
+    2:'negative',
+    3:'neutral',
+    4:'positive',
+    5:'positive'
+})
+```
+```
+X_data = data['reviewtext'] + ' ' + data['summary']
+y_data = data['sentiment']
+
+# creating new dataframe
+
+X_data_df = pd.DataFrame(data=X_data)
+X_data_df.columns = ['review']
+X_data_df.head()
+```
+
+<img src ="https://user-images.githubusercontent.com/34812655/115944006-318fe500-a468-11eb-9db1-fbe16410d7b4.png" width="800" height="400">
+
+
+
 ## RESULTS
 
 THE BELOW SHOWS OUTCOME FOR MUSICAL_INSTRUMENT DATASET
