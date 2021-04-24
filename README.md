@@ -67,7 +67,7 @@ X_data_df.columns = ['review']
 X_data_df.head()
 ```
 
-<img src ="https://user-images.githubusercontent.com/34812655/115944006-318fe500-a468-11eb-9db1-fbe16410d7b4.png" width="1200" height="600">
+![image](https://user-images.githubusercontent.com/34812655/115944142-d6aabd80-a468-11eb-9705-e0269d66ec4a.png)
 
 
 ## CREATING TEXT PROCESSING FUNCTIONS
