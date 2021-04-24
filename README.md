@@ -44,3 +44,50 @@ wget -x -c --load-cookies cookies.txt https://www.kaggle.com/eswarchandt/amazon-
 <img src = "https://user-images.githubusercontent.com/34812655/115943592-af062600-a465-11eb-8553-d554f631bea7.png" width="800" height="400">
 
 
+## RESULTS
+
+THE BELOW SHOWS OUTCOME FOR MUSICAL_INSTRUMENT DATASET
+
+
+<img src = "https://user-images.githubusercontent.com/34812655/115943809-e45f4380-a466-11eb-9675-d0a836d127a3.png" width="800" height="400">
+
+
+<img src = "https://user-images.githubusercontent.com/34812655/115943815-f5a85000-a466-11eb-8ab0-b42c455041e5.png" width="800" height="400">
+
+
+<img src = "https://user-images.githubusercontent.com/34812655/115943827-0658c600-a467-11eb-960d-73ca580c1a7c.png" width="800" height="400">
+
+
+
+AACURACY COMPARISON
+```
+
+model = ['MNB', 'Random Forest',  'SVM']
+acc = [MNB_accuracy, rfc_accuracy, svc_accuracy]
+
+sns.set_style("whitegrid")
+plt.figure(figsize=(5,6))
+plt.yticks(np.arange(0,100,10))
+plt.ylabel("Test Accuracy %")
+plt.xlabel("Machine Learning Model")
+sns.barplot(x= model, y= acc)
+plt.show()
+```
+
+<img src = "https://user-images.githubusercontent.com/34812655/115943866-3b651880-a467-11eb-98f3-263baefbece6.png" width="800" height="400">
+
+F-1 SCORE COMPARISON
+```
+model = ['MNB', 'Random Forest',  'SVM']
+f1_score = [MNB_f1, rfc_f1, svc_f1]
+
+sns.set_style("whitegrid")
+plt.figure(figsize=(5,6))
+plt.yticks(np.linspace(0,1,25))
+plt.ylabel("f1-score")
+plt.xlabel("Machine Learning Model")
+sns.barplot(x= model,  y= f1_score)
+plt.show()
+```
+<img src = "https://user-images.githubusercontent.com/34812655/115943901-76ffe280-a467-11eb-86c4-60dba601d0f7.png" width="800" height="400">
+
