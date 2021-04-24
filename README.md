@@ -74,7 +74,7 @@ sns.barplot(x= model, y= acc)
 plt.show()
 ```
 
-<img src = "https://user-images.githubusercontent.com/34812655/115943866-3b651880-a467-11eb-98f3-263baefbece6.png" width="800" height="400">
+<img src = "https://user-images.githubusercontent.com/34812655/115943866-3b651880-a467-11eb-98f3-263baefbece6.png" width="800" height="600">
 
 F-1 SCORE COMPARISON
 ```
@@ -89,5 +89,5 @@ plt.xlabel("Machine Learning Model")
 sns.barplot(x= model,  y= f1_score)
 plt.show()
 ```
-<img src = "https://user-images.githubusercontent.com/34812655/115943901-76ffe280-a467-11eb-86c4-60dba601d0f7.png" width="800" height="400">
+<img src = "https://user-images.githubusercontent.com/34812655/115943901-76ffe280-a467-11eb-86c4-60dba601d0f7.png" width="800" height="600">
 
