@@ -29,7 +29,14 @@ from sklearn.pipeline import Pipeline
 
 <img src = "https://user-images.githubusercontent.com/34812655/115942907-9431b280-a461-11eb-81ff-528b7a128e91.png" width="800" height="400">
 
-CODE TO DO SO
+CODE TO DO SO:
+```
+kaggle dataset download -f Musical_instruments_reviews.csv https://www.kaggle.com/eswarchandt/amazon-music-reviews?select=Musical_instruments_reviews.csv to C:\Users\nj061\OneDrive\Documents\Sentimental Analysis_wordCloud
+```
+```
+wget -x -c --load-cookies cookies.txt https://www.kaggle.com/eswarchandt/amazon-music-reviews?select=Musical_instruments_reviews.csv
+```
+
 
 <img src = "https://user-images.githubusercontent.com/34812655/115943592-af062600-a465-11eb-8553-d554f631bea7.png" width="800" height="400">
 
