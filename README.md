@@ -181,6 +181,9 @@ plt.show()
 
 # WORD CLOUD CREATION
 
+## DATA BEING PROCESSED BEFORE WORD CLOUD CAN BE CREATED
+
+```
 def sentiment_rating(rating):
     # Replacing ratings of 1,2,3 with 0 (not good) and 4,5 with 1 (good)
     if(int(rating) == 1 or int(rating) == 2 or int(rating) == 3):
@@ -212,23 +215,26 @@ def lemmatize_words(text):
             word = lemmatizer.lemmatize(i.strip(),get_simple_pos(pos[0][1]))
             final_text.append(word.lower())
     return " ".join(final_text)
-
+```
 
 ## PLOTTED WORD CLOUD
 
+```
 WordCloud of Product with Goo Ratings
 
 plt.figure(figsize = (20,20)) # Text Reviews with Poor Ratings
 wc = WordCloud(min_font_size = 3,  max_words = 3000 , width = 1600 , height = 800).generate(" ".join(bad))
 plt.imshow(wc,interpolation = 'bilinear')
+```
 
 ![image](https://user-images.githubusercontent.com/34812655/115944250-7d8f5980-a469-11eb-99e2-e2b341416da7.png)
 
-
+```
 WordCloud for Product with Bad Ratings
 
 plt.figure(figsize = (20,20)) # # Text Reviews with Good Ratings
 wc = WordCloud(min_font_size = 3,  max_words = 3000 , width = 1600 , height = 800).generate(" ".join(good))
 plt.imshow(wc,interpolation = 'bilinear')
+```
 
 ![image](https://user-images.githubusercontent.com/34812655/115944283-b4fe0600-a469-11eb-86f4-44f1539fdba4.png)
