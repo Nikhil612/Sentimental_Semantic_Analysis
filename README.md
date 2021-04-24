@@ -29,6 +29,9 @@ from sklearn.pipeline import Pipeline
 
 <img src = "https://user-images.githubusercontent.com/34812655/115942907-9431b280-a461-11eb-81ff-528b7a128e91.png" width="800" height="400">
 
+<img src = "https://user-images.githubusercontent.com/34812655/115943738-a5c98900-a466-11eb-9fc8-719a7339cd65.png" width="800" height="400">
+
+
 CODE TO DO SO:
 ```
 kaggle dataset download -f Musical_instruments_reviews.csv https://www.kaggle.com/eswarchandt/amazon-music-reviews?select=Musical_instruments_reviews.csv to C:\Users\nj061\OneDrive\Documents\Sentimental Analysis_wordCloud
