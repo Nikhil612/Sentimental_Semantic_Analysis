@@ -70,6 +70,67 @@ X_data_df.head()
 <img src ="https://user-images.githubusercontent.com/34812655/115944006-318fe500-a468-11eb-9db1-fbe16410d7b4.png" width="800" height="600">
 
 
+## CREATING TEXT PROCESSING FUNCTIONS
+
+```
+string.punctuation
+def final(X_data_full):
+    
+    # function for removing punctuations
+    def remove_punct(X_data_func):
+        string1 = X_data_func.lower()
+        translation_table = dict.fromkeys(map(ord, string.punctuation),' ')
+        string2 = string1.translate(translation_table)
+        return string2
+    
+    X_data_full_clear_punct = []
+    for i in range(len(X_data_full)):
+        test_data = remove_punct(X_data_full[i])
+        X_data_full_clear_punct.append(test_data)
+        
+    # function to remove stopwords
+    def remove_stopwords(X_data_func):
+        pattern = re.compile(r'\b(' + r'|'.join(stopwords.words('english')) + r')\b\s*')
+        string2 = pattern.sub(' ', X_data_func)
+        return string2
+    
+    X_data_full_clear_stopwords = []
+    for i in range(len(X_data_full)):
+        test_data = remove_stopwords(X_data_full[i])
+        X_data_full_clear_stopwords.append(test_data)
+        
+    # function for tokenizing
+    def tokenize_words(X_data_func):
+        words = nltk.word_tokenize(X_data_func)
+        return words
+    
+    X_data_full_tokenized_words = []
+    for i in range(len(X_data_full)):
+        test_data = tokenize_words(X_data_full[i])
+        X_data_full_tokenized_words.append(test_data)
+        
+    # function for lemmatizing
+    lemmatizer = WordNetLemmatizer()
+    def lemmatize_words(X_data_func):
+        words = lemmatizer.lemmatize(X_data_func)
+        return words
+    
+    X_data_full_lemmatized_words = []
+    for i in range(len(X_data_full)):
+        test_data = lemmatize_words(X_data_full[i])
+        X_data_full_lemmatized_words.append(test_data)
+        
+    # creating the bag of words model
+    cv = CountVectorizer(max_features=1000)
+    X_data_full_vector = cv.fit_transform(X_data_full_lemmatized_words).toarray()
+    
+    
+    tfidf = TfidfTransformer()
+    X_data_full_tfidf = tfidf.fit_transform(X_data_full_vector).toarray()
+    
+    return X_data_full_tfidf
+ ```
+
 
 ## RESULTS
 
