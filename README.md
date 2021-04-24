@@ -27,10 +27,10 @@ from sklearn.pipeline import Pipeline
 
 ## Datasets That helped in Process
 
-<img src = "https://user-images.githubusercontent.com/34812655/115942907-9431b280-a461-11eb-81ff-528b7a128e91.png" width="400" height="400">
+<img src = "https://user-images.githubusercontent.com/34812655/115942907-9431b280-a461-11eb-81ff-528b7a128e91.png" width="800" height="400">
 
 CODE TO DO SO
 
-<img src = "https://user-images.githubusercontent.com/34812655/115943592-af062600-a465-11eb-8553-d554f631bea7.png" width="400" height="400">
+<img src = "https://user-images.githubusercontent.com/34812655/115943592-af062600-a465-11eb-8553-d554f631bea7.png" width="800" height="400">
 
 
