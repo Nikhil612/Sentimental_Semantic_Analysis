@@ -220,7 +220,7 @@ def lemmatize_words(text):
 ## PLOTTED WORD CLOUD
 
 ```
-WordCloud of Product with Goo Ratings
+WordCloud of Product with Good Ratings
 
 plt.figure(figsize = (20,20)) # Text Reviews with Poor Ratings
 wc = WordCloud(min_font_size = 3,  max_words = 3000 , width = 1600 , height = 800).generate(" ".join(bad))
